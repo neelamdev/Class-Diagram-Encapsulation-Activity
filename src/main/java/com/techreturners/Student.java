@@ -4,7 +4,7 @@ public class Student {
     private final String studentName;
     private char studentGrade;
     private final int studentGroup;
-    private final String secretNickName = "kitty";
+    private final String SECRET_NICK_NAME = "kitty";
     private final char[] studentGradeArray = {'E', 'D', 'C', 'B', 'A'};
     private final int[] studentGroupArray = {1, 2, 3, 4, 5};
 
