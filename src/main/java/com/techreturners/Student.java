@@ -1,11 +1,11 @@
-package com.techReturners;
+package com.techreturners;
 
 public class Student {
     private final String studentName;
     private char studentGrade;
     private final int studentGroup;
-    private String secretNickName;
-    private final char[] studentGradeArray = {'A', 'B', 'C', 'D', 'E'};
+    private final String secretNickName = "kitty";
+    private final char[] studentGradeArray = {'E', 'D', 'C', 'B', 'A'};
     private final int[] studentGroupArray = {1, 2, 3, 4, 5};
 
     public Student(String studentName, char studentGrade, int studentGroup) {
@@ -23,11 +23,9 @@ public class Student {
         return studentGrade;
     }
 
-    public void setSecretNickName(String secretNickName) {
-        this.secretNickName = secretNickName;
-    }
 
-    public void studentGradeUpgrade() {
+
+    public void gradeUpgrade() {
         for (int i = 0; i <= studentGradeArray.length - 1; i++) {
             if (studentGradeArray[i] == studentGrade && i != studentGradeArray.length - 1) {
                 studentGrade = studentGradeArray[i + 1];
@@ -37,7 +35,7 @@ public class Student {
 
     }
 
-    public void studentGradeDowngrade() {
+    public void gradeDowngrade() {
         for (int i = 0; i <= studentGradeArray.length - 1; i++) {
             if (studentGradeArray[i] == studentGrade && i != 0) {
                 studentGrade = studentGradeArray[i - 1];

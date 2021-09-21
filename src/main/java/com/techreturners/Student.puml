@@ -13,9 +13,8 @@ class Student {
 +Student(studentName :String,studentGrade :char,studentGroup :int):void
 +getStudentName():String
 +getStudentGrade():char
-+setSecretNickName(secretNickName:String):void
-+studentGradeUpgrade():void
-+studentGradeDowngrade():void
++gradeUpgrade():void
++gradeDowngrade():void
 
 }
 
